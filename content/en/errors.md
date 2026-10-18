@@ -1,4 +1,9 @@
-# Errors
+---
+title: "Errors"
+weight: 40
+---
+
+# Errors {#errors}
 
 Any non-2xx response raises an error. The Ruby error tree the rbgo binding
 exposes mirrors the Go `APIError` from [go-dimail](https://github.com/go-dimail/dimail):
@@ -29,7 +34,7 @@ rescue Dimail::APIError => e
 end
 ```
 
-## In Go
+## In Go {#in-go}
 
 `Session#Call` returns the underlying `*godimail.APIError` unchanged, so the same
 information is available with `errors.As`:

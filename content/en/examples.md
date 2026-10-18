@@ -1,4 +1,9 @@
-# Examples
+---
+title: "Examples"
+weight: 30
+---
+
+# Examples {#examples}
 
 The repository ships runnable Ruby examples under
 [`examples/`](https://github.com/go-ruby-dimail/dimail/tree/main/examples). Each
@@ -6,7 +11,7 @@ runs under rbgo once the `require "dimail"` binding is installed; the operation
 names they use are checked against the real generated API by a Go test, so they
 cannot drift.
 
-## Basic usage
+## Basic usage {#basic-usage}
 
 ```ruby
 require "dimail"
@@ -25,7 +30,7 @@ client.get_domains.each { |d| puts d["name"] }
 client.get_my_domains.each { |d| puts d["name"] }
 ```
 
-## Mailboxes and forwards
+## Mailboxes and forwards {#mailboxes-and-forwards}
 
 ```ruby
 created = client.post_mailbox_v2("example.gouv.fr", "jean.dupont",
@@ -38,7 +43,7 @@ client.post_forward("example.gouv.fr", "contact",
                     { "nexthop" => "team@other.example" })
 ```
 
-## Error handling
+## Error handling {#error-handling}
 
 ```ruby
 begin
@@ -49,4 +54,4 @@ rescue Dimail::APIError => e
 end
 ```
 
-See [Errors](errors.md) for the full error surface.
+See [Errors]({{< relref "errors.md" >}}) for the full error surface.

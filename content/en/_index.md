@@ -1,4 +1,9 @@
-# go-ruby-dimail
+---
+title: "Home"
+weight: 10
+---
+
+# go-ruby-dimail {#go-ruby-dimail}
 
 The pure-Go, Ruby-runtime-independent core of the Ruby **`dimail`** gem — a client
 for the **Dimail API** of the French government's *La Suite numérique* platform,
@@ -20,13 +25,13 @@ which:
 Nothing here depends on the Ruby runtime, so it is equally usable as a standalone
 Go library — a sibling of `go-ruby-regexp` and the rest of the go-ruby-* family.
 
-## Install
+## Install {#install}
 
 ```sh
 go get github.com/go-ruby-dimail/dimail
 ```
 
-## At a glance
+## At a glance {#at-a-glance}
 
 - **CGO-free** — builds and tests identically on `amd64`, `arm64`, `riscv64`,
   `loong64`, `ppc64le` and `s390x`.
@@ -34,5 +39,5 @@ go get github.com/go-ruby-dimail/dimail
 - Backed by [go-dimail](https://github.com/go-dimail/dimail) (the typed,
   OpenAPI-generated client).
 
-See [Usage](usage.md) for the API, [Examples](examples.md) for runnable Ruby, and
-[Errors](errors.md) for the error surface.
+See [Usage]({{< relref "usage.md" >}}) for the API, [Examples]({{< relref "examples.md" >}}) for runnable Ruby, and
+[Errors]({{< relref "errors.md" >}}) for the error surface.
