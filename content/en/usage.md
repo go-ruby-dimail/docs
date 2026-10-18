@@ -1,6 +1,11 @@
-# Usage
+---
+title: "Usage"
+weight: 20
+---
 
-## Ruby (under rbgo)
+# Usage {#usage}
+
+## Ruby (under rbgo) {#ruby-under-rbgo}
 
 Once rbgo ships the `require "dimail"` binding, the gem is used like this:
 
@@ -24,7 +29,7 @@ client.get_domains                                         # -> Array<Hash>
 client.post_mailbox_v2("d.fr", "user", { "features" => ["ox"] })
 ```
 
-## Go
+## Go {#go}
 
 The same surface is available directly, without Ruby:
 
@@ -56,7 +61,7 @@ func main() {
 `Session.Client()` returns the underlying fully-typed `*godimail.Client`, and
 `Session.Methods()` lists every snake_case operation `Call` accepts.
 
-## Argument coercion
+## Argument coercion {#argument-coercion}
 
 | Parameter kind | Pass as |
 | --- | --- |

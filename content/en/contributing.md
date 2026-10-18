@@ -1,9 +1,14 @@
-# Contributing
+---
+title: "Contributing"
+weight: 50
+---
+
+# Contributing {#contributing}
 
 go-ruby-dimail is BSD-3-Clause. The code lives at
 [github.com/go-ruby-dimail/dimail](https://github.com/go-ruby-dimail/dimail).
 
-## Ground rules
+## Ground rules {#ground-rules}
 
 - **CGO-free.** No cgo, ever — the package must build and test on all six
   supported 64-bit targets (`amd64`, `arm64`, `riscv64`, `loong64`, `ppc64le`,
@@ -15,7 +20,7 @@ go-ruby-dimail is BSD-3-Clause. The code lives at
   Ruby-idiomatic adapter. Changes to the API surface belong upstream (regenerate
   go-dimail from `openapi.json` with `go generate ./...`).
 
-## Build & test
+## Build & test {#build-test}
 
 ```sh
 go build ./...
@@ -24,7 +29,7 @@ go test -race -coverprofile=cover.out ./...
 go tool cover -func=cover.out | tail -1   # must read 100.0%
 ```
 
-## Examples
+## Examples {#examples}
 
 The Ruby examples under `examples/` are verified: their operation names are
 checked against the real generated API by `TestRubyExamplesReferenceRealOperations`,
